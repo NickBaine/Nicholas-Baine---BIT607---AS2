@@ -1,0 +1,141 @@
+<!-- Nicholas Baine -->
+<!-- Student ID: 5135277 -->
+<!-- Assessment 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+
+    <header class="hero-header">
+        <h1>Snazzy Paws Grooming</h1>
+
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">         <!-- Hamburger menu for mobile -->
+                &#9776;
+            </label>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+
+            <h2>Make a Booking</h2>
+            <p>Please fill out the form below and select the services you would like for your dog.</p>
+
+            <form class="booking-form">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dog-name">Dog's Name</label>
+                    <input type="text" id="dog-name" name="dog-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="breed">Breed</label>
+                    <input type="text" id="breed" name="breed" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required min="0">
+                </div>
+
+                <h3>Select Your Services</h3>
+
+                <fieldset class="service-group">
+                    <legend>Regular Services</legend>
+
+                    <label>
+                        <input type="checkbox" name="regular-service" value="Bath & Blow Dry">
+                        Bath & Blow Dry
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="regular-service" value="Full Groom">
+                        Full Groom
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="regular-service" value="Nail Trim">
+                        Nail Trim
+                    </label>
+                </fieldset>
+
+                <fieldset class="service-group">
+                    <legend>Medicated Treatments</legend>
+
+                    <label>
+                        <input type="checkbox" name="medicated" value="Medicated Wash">
+                        Medicated Wash
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="medicated" value="Flea Treatment">
+                        Flea Treatment
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="medicated" value="Skin Care Treatment">
+                        Skin Care Treatment
+                    </label>
+                </fieldset>
+
+                <fieldset class="service-group">
+                    <legend>Package Deals</legend>
+
+                    <label>
+                        <input type="checkbox" name="package" value="Deluxe Grooming Package">
+                        Deluxe Grooming Package
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="package" value="Puppy Intro Package">
+                        Puppy Intro Package
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="package" value="Seasonal Special Package">
+                        Seasonal Special Package
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Submit Booking</button>        <!-- Submit button -->
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Snazzy Paws Grooming - Opening hours: Monday - Saturday 9am - 5pm</p>
+    </footer>
+
+</body>
+
+</html>

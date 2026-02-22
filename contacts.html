@@ -1,0 +1,100 @@
+<!-- Nicholas Baine -->
+<!-- Student ID: 5135277 -->
+<!-- Assessment 2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+
+    <header class="hero-header">
+        <h1>Snazzy Paws Grooming</h1>
+
+        <nav>            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">         <!-- Hamburger menu for mobile -->
+                &#9776;
+            </label>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get in touch? We’re here to help!</p>
+
+            <div class="contact-details">
+                <p><strong>Phone:</strong> 0200 001 001</p>
+                <p><strong>Email:</strong> contact@snazzypaws.co.nz</p>
+                <p><strong>Address:</strong> 123 that Street, Hamilton, New Zealand</p>
+            </div>
+
+            <div class="contact-columns">
+
+                <div class="column map-column">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.343476424334!2d175.2793!3d-37.7870!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2ad476f4d5c1%3A0x0000000000000000!2sHamilton%20Central!5e0!3m2!1sen!2snz!4v0000000000000"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="column form-column">
+
+                    <form class="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Comments / Questions</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Snazzy Paws Grooming - Opening hours: Monday - Saturday 9am - 5pm</p>
+    </footer>
+
+</body>
+
+</html>
