@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Staff Only – Restricted Area"
+AuthUserFile "C:\Users\nickb\Documents\BIT607 - Web Development\Nicholas Baine - BIT607 - AS3\.htaccess"
+Require valid-user
+
+<Files "roster.html">
+    Require valid-user
+</Files>

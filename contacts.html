@@ -1,85 +1,114 @@
 <!-- Nicholas Baine -->
 <!-- Student ID: 5135277 -->
-<!-- Assessment 2 -->
+<!-- Assessment 3 -->
+<!-- Refactored to use W3.CSS for Assessment 3 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Contact Snazzy Paws Grooming for bookings, inquiries, and location details. We’re here to help with your pet grooming needs.">
+
     <title>Contact - Snazzy Paws Grooming</title>
+
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
 
-    <header class="hero-header">
+    <!-- Header area with hero background -->
+    <header class="hero-header w3-center">
         <h1>Snazzy Paws Grooming</h1>
 
-        <nav>            
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">         <!-- Hamburger menu for mobile -->
-                &#9776;
-            </label>
+        <!-- Navigation -->
+        <nav class="w3-center">
 
-            <ul class="menu">
+            <!-- Hamburger toggle -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <!-- Nav bar menu -->
+            <ul class="menu w3-ul w3-center">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="contacts.html">Contact</a></li>
+                <li><a href="roster.html">Staff Roster</a></li>
+                <li><a href="Privacy.html">Privacy Policy</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <main>
+    <!-- Main content area -->
+    <main class="w3-container">
+
         <div class="main-content">
 
             <h2>Contact Us</h2>
             <p>Have questions or want to get in touch? We’re here to help!</p>
 
+            <!-- Contact details block -->
             <div class="contact-details">
                 <p><strong>Phone:</strong> 0200 001 001</p>
                 <p><strong>Email:</strong> contact@snazzypaws.co.nz</p>
-                <p><strong>Address:</strong> 123 that Street, Hamilton, New Zealand</p>
+                <p><strong>Address:</strong> 123 That Street, Hamilton, New Zealand</p>
             </div>
 
+            <!-- Two-column layout (map + form) -->
             <div class="contact-columns">
 
+                <!-- Map column -->
                 <div class="column map-column">
                     <div class="map-container">
+
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.343476424334!2d175.2793!3d-37.7870!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d2ad476f4d5c1%3A0x0000000000000000!2sHamilton%20Central!5e0!3m2!1sen!2snz!4v0000000000000"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
                     </div>
                 </div>
 
+                <!-- Contact form column -->
                 <div class="column form-column">
 
                     <form class="contact-form">
 
+                        <!-- Name -->
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" required>
                         </div>
 
+                        <!-- Email -->
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" required>
                         </div>
 
+                        <!-- Phone -->
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" required>
                         </div>
 
+                        <!-- Message -->
                         <div class="form-group">
                             <label for="message">Comments / Questions</label>
                             <textarea id="message" rows="6" required></textarea>
                         </div>
 
+                        <!-- Submit button -->
                         <button type="submit" class="submit-btn">Send Message</button>
 
                     </form>
@@ -91,7 +120,8 @@
         </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="w3-center w3-padding">
         <p>&copy; 2026 Snazzy Paws Grooming - Opening hours: Monday - Saturday 9am - 5pm</p>
     </footer>
 

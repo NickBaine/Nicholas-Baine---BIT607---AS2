@@ -1,66 +1,89 @@
 <!-- Nicholas Baine -->
 <!-- Student ID: 5135277 -->
-<!-- Assessment 2 -->
+<!-- Assessment 3 -->
+<!-- Refactored to use W3.CSS for Assessment 3 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Book a grooming appointment for your dog at Snazzy Paws Grooming. Choose from a range of services and packages.">
+
     <title>Booking - Snazzy Paws Grooming</title>
+
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="link_to_w3css">
+    
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
 
-    <header class="hero-header">
+    <!-- Header with hero image -->
+    <header class="hero-header w3-center">
         <h1>Snazzy Paws Grooming</h1>
 
-        <nav>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">         <!-- Hamburger menu for mobile -->
-                &#9776;
-            </label>
+        <!-- Navigation -->
+        <nav class="w3-center">
 
-            <ul class="menu">
+            <!-- Hamburger toggle -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+            <!-- Nav bar menu -->
+            <ul class="menu w3-ul w3-center">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="contacts.html">Contact</a></li>
+                <li><a href="roster.html">Staff Roster</a></li>
+                <li><a href="Privacy.html">Privacy Policy</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <main>
+    <!-- Main page content -->
+    <main class="w3-container">
+
         <div class="main-content">
 
             <h2>Make a Booking</h2>
             <p>Please fill out the form below and select the services you would like for your dog.</p>
 
+            <!-- Booking form -->
             <form class="booking-form">
 
+                <!-- Your name -->
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
+                <!-- Email -->
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
+                <!-- Dog name -->
                 <div class="form-group">
                     <label for="dog-name">Dog's Name</label>
                     <input type="text" id="dog-name" name="dog-name" required>
                 </div>
 
+                <!-- Breed -->
                 <div class="form-group">
                     <label for="breed">Breed</label>
                     <input type="text" id="breed" name="breed" required>
                 </div>
 
+                <!-- Age -->
                 <div class="form-group">
                     <label for="age">Age</label>
                     <input type="number" id="age" name="age" required min="0">
@@ -68,12 +91,13 @@
 
                 <h3>Select Your Services</h3>
 
+                <!-- Regular services -->
                 <fieldset class="service-group">
                     <legend>Regular Services</legend>
 
                     <label>
-                        <input type="checkbox" name="regular-service" value="Bath & Blow Dry">
-                        Bath & Blow Dry
+                        <input type="checkbox" name="regular-service" value="Bath &amp; Blow Dry">
+                        Bath &amp; Blow Dry
                     </label>
 
                     <label>
@@ -87,6 +111,7 @@
                     </label>
                 </fieldset>
 
+                <!-- Medicated treatments -->
                 <fieldset class="service-group">
                     <legend>Medicated Treatments</legend>
 
@@ -106,6 +131,7 @@
                     </label>
                 </fieldset>
 
+                <!-- Package deals -->
                 <fieldset class="service-group">
                     <legend>Package Deals</legend>
 
@@ -125,14 +151,16 @@
                     </label>
                 </fieldset>
 
-                <button type="submit" class="submit-btn">Submit Booking</button>        <!-- Submit button -->
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">Submit Booking</button>
 
             </form>
 
         </div>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="w3-center w3-padding">
         <p>&copy; 2026 Snazzy Paws Grooming - Opening hours: Monday - Saturday 9am - 5pm</p>
     </footer>
 

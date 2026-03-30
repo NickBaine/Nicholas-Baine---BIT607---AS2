@@ -1,76 +1,98 @@
 <!-- Nicholas Baine -->
 <!-- Student ID: 5135277 -->
-<!-- Assessment 2 -->
+<!-- Assessment 3 -->
+<!-- Refactored to use W3.CSS for Assessment 3 -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description"
+        content="Snazzy Paws Grooming - Professional dog grooming services, gallery, and online booking. Locally owned and operated.">
+
     <title>Snazzy Paws Grooming</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
 
-    <header class="hero-header">
-        <h1>Snazzy Paws Grooming</h1>
+    <!-- Header section with hero image -->
+    <header class="hero-header w3-center">
+        <h1 class="w3-text-white">Snazzy Paws Grooming</h1>
 
-        <nav>
+        <!-- Navigation bar -->
+        <nav class="w3-center">
+            <!-- Mobile hamburger toggle -->
             <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">         <!-- Hamburger menu for mobile -->
-                &#9776;
-            </label>
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-            <ul class="menu">
+            <!-- Nav bar menu -->
+            <ul class="menu w3-ul w3-center">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="contacts.html">Contact</a></li>
+                <li><a href="roster.html">Staff Roster</a></li>
+                <li><a href="Privacy.html">Privacy Policy</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- Main content container -->
+    <main class="w3-container">
+
         <div class="main-content">
 
+            <!-- Welcome message -->
             <h2>Welcome to Snazzy Paws!</h2>
             <p>Snazzy Paws Grooming is locally owned and operated with a strong commitment to the community and its
                 pets.</p>
             <p>We offer grooming services to all breeds of dogs and aim to provide a positive experience. We look
-                forward to
-                meeting you and your furry companion.</p>
+                forward to meeting you and your furry companion.</p>
 
+            <!-- Cards section -->
             <div class="card-container">
 
-                <div class="card">
+                <!-- Services card -->
+                <div class="card w3-card">
                     <h3>Services</h3>
-                    <p>Check out our range of grooming options. We offer regular grooming services as well as more specialised and medicated treatments.</p>
-                    <p>Book for a single service, or choose from a range of packages</p>                    
-                    <img src="images/Feature_1.jpg" alt="Description of image">
+                    <p>Check out our range of grooming options. We offer regular grooming services as well as more
+                        specialised and medicated treatments.</p>
+                    <p>Book for a single service, or choose from a range of packages.</p>
+                    <img src="images/Feature_1.jpg" alt="Dog grooming service">
                 </div>
 
-                <div class="card">
-                    <img src="images/Feature_2.jpg" alt="Description of image">
+                <!-- About Us card -->
+                <div class="card w3-card">
+                    <img src="images/Feature_2.jpg" alt="Dog grooming salon">
                     <h3>About Us</h3>
-                    <p>We are a locally owned an operated establishment with s astrong commitment to our community.</p>
-                    <p>Our aim is to provide nop-notch professional grooming services to the pet owners and pet enthusiasts.</p>
+                    <p>We are a locally owned and operated establishment with a strong commitment to our community.</p>
+                    <p>Our aim is to provide top‑notch professional grooming services to pet owners and enthusiasts.</p>
                 </div>
 
-                <div class="card">
+                <!-- Gallery card -->
+                <div class="card w3-card">
                     <h3>Gallery</h3>
                     <p>Check out our gallery of previous doggy customers!</p>
-                    <img src="images/Feature_3.jpg" alt="Description of image">
+                    <img src="images/Feature_3.jpg" alt="Groomed dog gallery preview">
                 </div>
 
             </div>
 
         </div>
+
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="w3-center w3-padding">
         <p>&copy; 2026 Snazzy Paws Grooming - Opening hours: Monday - Saturday 9am - 5pm</p>
     </footer>
 
